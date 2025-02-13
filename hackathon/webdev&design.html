@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hackathon | Web Development and Design</title>
+    <style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+        background: linear-gradient(135deg, #a0c4ff 0%, #b9fbc0 100%);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 2em;
+        color: white; 
+        margin-bottom: 40px; /* Increased margin for spacing from cards */
+    }
+    .flex_container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px; /* Space between cards */
+    }
+    .card {
+    position: relative;
+    background-color: whitesmoke;
+    width: 320px;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgb(224, 224, 224);
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 320px; /* Ensure the image covers the card's width */
+    height: 400px; /* Ensure the image covers the card's height */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1) rotate(-3deg);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card:hover .content {
+    transform: translateY(0);
+}
+
+header {
+    text-align: center; 
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+header h1 {
+    font-size: 5em; 
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    
+}
+    </style>
+</head>
+<body>
+    <header>
+         <h1>Web Development and Design</h1>
+    </header>
+    <div class="flex_container">
+        
+        <div class="card">
+            <a href="https://www.tabnine.com/" target="_blank">
+                <img src="Tanine 1.jpg" alt="Tabnine-AI">
+            </a>
+            <div class="content">
+                <h1>Tabnine</h1>
+                <p>Tabnine is an AI-powered code completion tool designed to assist developers by providing smart code suggestions as they type.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://github.com/features/copilot" target="_blank">
+                <img src="Git.png.jpg" alt="GitHub-Copilot">
+            </a>
+            <div class="content">
+                <h1>Github Copilot</h1>
+                <p>GitHub Copilot is an AI-powered code completion tool developed by GitHub in collaboration with OpenAI. It acts as a coding assistant.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://www.blackbox.ai/" target="_blank">
+                <img src="blackbox 2.png.jpg" alt="Black box-AI">
+            </a>
+            <div class="content">
+                <h1>Black box-AI</h1>
+                <p>Black-box AI refers to artificial intelligence systems, particularly machine learning models, whose internal workings are not easily understood or interpretable by humans.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://www.wix.com/blog/wix-artificial-design-intelligence" target="_blank">
+                <img src="Wix 1.jpg" alt="Wix ADI">
+            </a>
+            <div class="content">
+                <h1>Wix ADI</h1>
+                <p>Wix is a cloud-based web development platform that allows users to create websites easily through drag-and-drop tools, without requiring coding knowledge. </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://uizard.io/" target="_blank">
+                <img src="Uizard.jpeg.jpg" alt="Uizard">
+            </a>
+            <div class="content">
+                <h1>Uizard</h1>
+                <p>Uizard is a user-friendly design tool that allows people to create digital products like mobile apps, websites, and software interfaces without needing advanced design or coding skills.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://fronty.com/" target="_blank">
+                <img src="Fronty.jpeg.jpg" alt="Fronty">
+            </a>
+            <div class="content">
+                <h1>Fronty</h1>
+                <p>Fronty is a tool that automates the process of converting website designs (usually from images like JPG, PNG, or Sketch files) into HTML, CSS, and React code. </p>
+            </div>
+        </div>
+
+        
+        <div class="card">
+            <a href="https://lightning.ai/?_hstc=36507775.f0110dbf558c7f60f16f45398fa1571b.1726207075347.1726207075347.1726207075347.1&hssc=36507775.1.1726207075349&_hsfp=2049128043" target="_blank">
+                <img src="Lightning.jpeg.jpg" alt="Lightning AI">
+            </a>
+            <div class="content">
+                <h1>Lightning AI</h1>
+                <p>Lightning AI is a platform that simplifies the process of building and deploying machine learning (ML) models and applications. </p>
+            </div>
+        </div>
+
+    
+        <div class="card">
+            <a href="https://10web.io/ai-website-builder/" target="_blank">
+                <img src="10Web.jpg" alt="10Web">
+            </a>
+            <div class="content">
+                <h1>10Web</h1>
+                <p> The 10Web AI Builder allows you to automatically recreate any website into WordPress in minutes by analyzing the original website’s structure and content.</p>
+            </div>
+        </div>
+
+ 
+        <div class="card">
+            <a href="https://durable.co/" target="_blank">
+                <img src="Durable.png.jpg" alt="Durable">
+            </a>
+            <div class="content">
+                <h1>Durable</h1>
+                <p>AI website builder that can create a website in 30 seconds by asking users a few simple questions about their business and generating a design, copy, and layout tailored to their needs.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hackathon | Entertainment & Media</title>
+    <style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+        background: linear-gradient(135deg, #a0c4ff 0%, #b9fbc0 100%);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 2em;
+        color: white; 
+        margin-bottom: 40px; /* Increased margin for spacing from cards */
+    }
+    .flex_container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px; /* Space between cards */
+    }
+    .card {
+    position: relative;
+    background-color: whitesmoke;
+    width: 320px;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgb(224, 224, 224);
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 320px; /* Ensure the image covers the card's width */
+    height: 400px; /* Ensure the image covers the card's height */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1) rotate(-3deg);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card:hover .content {
+    transform: translateY(0);
+}
+
+header {
+    text-align: center; 
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+header h1 {
+    font-size: 5em; 
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    
+}
+    </style>
+</head>
+<body>
+    <header>
+         <h1>Entertainment & Media</h1>
+    </header>
+    <div class="flex_container">
+        
+        <div class="card">
+            <a href="https://www.synthesia.io/" target="_blank">
+                <img src="synthase.jpeg" alt="synthesia -Ai for creating voice overs">
+            </a>
+            <div class="content">
+                <h1>synthesia</h1>
+                <p>Create studio-quality videos with AI avatars and voiceovers in 140+ languages.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://lumen5.com/dashboard/" target="_blank">
+                <img src="111111.jpg" alt="Lumen5 -Ai for create video content">
+            </a>
+            <div class="content">
+                <h1>Lumen5</h1>
+                <p>AI that enables anyone without training or experience to easily create engaging video content within minutes.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://invideo.io/make/ai-web/?utm_source=google&utm_medium=cpc&utm_campaign=Global_Search_Brand_Exact_EN&adset_name=Invideo_AI&keyword=invideo%20ai%20login&network=g&device=c&utm_term=invideo%20ai%20login&utm_content=Invideo_AI&matchtype=e&placement=g&campaign_id=18035330774&adset_id=152533182894&ad_id=674819400174&gad_source=1&gclid=CjwKCAjwooq3BhB3EiwAYqYoEiv-WpP7axEpCUc_HHSOiMx88rHVd4XPJhkJ6mGiijWtSydQxxvHzBoC5IoQAvD_BwE" target="_blank">
+                <img src="InVideo.avif" alt="QuestionWell - AI for video with script">
+            </a>
+            <div class="content">
+                <h1>InVideo</h1>
+                <p>Type any topic and invideo AI creates a video with script, visuals, subtitles, voiceover & music.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://deepdreamgenerator.com/" target="_blank">
+                <img src="" alt="Deep Dream Generator">
+            </a>
+            <div class="content">
+                <h1>Deep Dream Generator</h1>
+                <p> Deep Dream Generator, make amazing AI art, photos, videos in seconds! Unleash your creativity  </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://creator.nightcafe.studio/" target="_blank">
+                <img src="11111.jpg" alt="Nightcafe">
+            </a>
+            <div class="content">
+                <h1>Night cafe</h1>
+                <p>Create amazing artworks in seconds using the power of Artificial Intelligence,</p>
+        
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://www.tunetech.ai/music-ai/amper-music" target="_blank">
+                <img src="1111.jpg" alt="Amper Music">
+            </a>
+            <div class="content">
+                <h1>Amper Music</h1>
+                <p>Amper Music is a cutting-edge music creation platform that leverages artificial intelligence and machine learning to enable users to create custom music tracks .</p>
+            </div>
+        </div>
+
+        
+        <div class="card">
+            <a href="https://soundraw.io/?ref=wnycdfes&gad_source=1&gclid=CjwKCAjwooq3BhB3EiwAYqYoErj7ox_lvS0flak0eoxpcGyRZ_O6orFMqvgJY9DxbMrl-yf9b2j4mhoCWywQAvD_BwE" target="_blank">
+                <img src="111.jpg" alt="Sound Draw">
+            </a>
+            <div class="content">
+                <h1>Sound Draw</h1>
+                <p>Create unique songs in just a few clicks. Generate unlimited royalty-free music to use in your songs, projects and videos.</p>
+            </div>
+        </div>
+
+    
+        <div class="card">
+            <a href="https://techcrunch.com/startup-battlefield/company/jukedeck/" target="_blank">
+                <img src="11.jpg" alt="Juckdeck Ai">
+            </a>
+            <div class="content">
+                <h1>Jukedeck</h1>
+                <p>Jukedeck's new artificial intelligence music composition technology, creators can get a cheap, royalty free soundtrack custom-made for their video.</p>
+            </div>
+        </div>
+
+ 
+        <div class="card">
+            <a href="https://www.canva.com/ai-image-generator/" target="_blank">
+                <img src="canva-logo-illustration-icon_895118-4442.avif" alt="Canva AI">
+            </a>
+            <div class="content">
+                <h1>Canva ai</h1>
+                <p>Watch your words and phrases transform into beautiful images with the best AI image generators available at your fingertips.</p>
+            </div>
+        </div>
+
+ 
+        <div class="card">
+            <a href="https://replika.com/" target="_blank">
+                <img src="replika.jpeg.jpg" alt="Replika AI">
+            </a>
+            <div class="content">
+                <h1>Replika</h1>
+                <p> An AI companion who is eager to learn and would love to see the world through your eyes. Replika is always ready to chat when you need an empathetic friend</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://www.hootsuite.com/social-media-tools/ai-caption-generator-social-media" target="_blank">
+                <img src="WhatsApp Image 2024-09-13 at 12.19.43_0f43b577.jpg" alt="Hootsuite">
+            </a>
+            <div class="content">
+                <h1>Hootsuite</h1>
+                <p> with this AI social media post generator. It's your new shortcut to more engagement, more sales, and more high-fives from your boss.</p>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <a href="https://app.writesonic.com/library/8784b860-9cab-4d5b-8a84-5b4dd3a72bdd/all" target="_blank">
+                <img src="ss.jpg" alt="Writesonic">
+            </a>
+            <div class="content">
+                <h1>Writesonic</h1>
+                <p>Writesonic is the Generative AI platform for crafting factually-accurate, on-brand content with real-time data, optimizing for SEO, </p>
+            </div>
+        </div>
+
+  
+        
+       
+
+    </div>
+</body>
+</html>

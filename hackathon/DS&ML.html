@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hackathon | Data Science and Machine Learning</title>
+    <style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+        background: linear-gradient(135deg, #a0c4ff 0%, #b9fbc0 100%);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 2em;
+        color: white; 
+        margin-bottom: 40px; 
+    }
+    .flex_container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px; 
+    }
+    .card {
+        position: relative;
+        background-color: whitesmoke;
+        width: 320px;
+        height: 400px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 2px 4px rgb(224, 224, 224);
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card img {
+        width: 320px; 
+        height: 400px; 
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover img {
+        transform: scale(1.1) rotate(-3deg);
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 20px;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card:hover .content {
+        transform: translateY(0);
+    }
+
+    header {
+        text-align: center; 
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    header h1 {
+        font-size: 3em; 
+        color: white;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Data Science & Machine Learning</h1>
+    </header>
+    <div class="flex_container">
+        <div class="card">
+            <a href="https://www.tensorflow.org/" target="_blank">
+                <img src="images (3).png" alt="TensorFlow">
+            </a>
+            <div class="content">
+                <h1>TensorFlow</h1>
+                <p>TensorFlow is an open-source machine learning library developed by Google for various machine learning tasks, including neural network training.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://pytorch.org/" target="_blank">
+                <img src="a0fbab1e3b3d4ed0ab5184f5af56043d.jpg" alt="PyTorch">
+            </a>
+            <div class="content">
+                <h1>PyTorch</h1>
+                <p>PyTorch is an open-source deep learning platform known for its flexibility and speed, widely used for research and production in AI.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://scikit-learn.org/" target="_blank">
+                <img src="98cbcf5d60a444d79d09d57e124751dd.jpg" alt="Scikit-learn">
+            </a>
+            <div class="content">
+                <h1>Scikit-learn</h1>
+                <p>Scikit-learn is a Python library for simple and efficient tools for data mining and data analysis, built on NumPy, SciPy, and Matplotlib.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://keras.io/" target="_blank">
+                <img src="2048px-Keras_logo.svg.png" alt="Keras">
+            </a>
+            <div class="content">
+                <h1>Keras</h1>
+                <p>Keras is a high-level neural networks API, written in Python, capable of running on top of TensorFlow, CNTK, or Theano.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://xgboost.readthedocs.io/" target="_blank">
+                <img src="Screenshot 2024-09-13 115012.png" alt="XGBoost">
+            </a>
+            <div class="content">
+                <h1>XGBoost</h1>
+                <p>XGBoost is an open-source library that provides an optimized distributed gradient boosting framework designed for high performance and efficiency.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://spark.apache.org/mllib/" target="_blank">
+                <img src="flat,750x,075,f-pad,750x1000,f8f8f8.u4.jpg" alt="Apache Spark (MLlib)">
+            </a>
+            <div class="content">
+                <h1>Apache Spark (MLlib)</h1>
+                <p>MLlib is Apache Spark's scalable machine learning library that provides various algorithms for classification, regression, clustering, and more.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://lightgbm.readthedocs.io/" target="_blank">
+                <img src="176028341-gbm-triangle-letter-logo-design-with-triangle-shape-gbm-triangle-logo-design-monogram-gbm-triangle.jpg" alt="LightGBM">
+            </a>
+            <div class="content">
+                <h1>LightGBM</h1>
+                <p>LightGBM is a gradient boosting framework that uses tree-based learning algorithms, designed for efficiency and scalability in handling large datasets.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://www.h2o.ai/products/h2o/" target="_blank">
+                <img src="H2O.ai_.png" alt="H2O.ai (Open-source version)">
+            </a>
+            <div class="content">
+                <h1>H2O.ai</h1>
+                <p>H2O.ai provides open-source software for scalable machine learning and data analytics, offering powerful tools for building predictive models.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://catboost.ai/" target="_blank">
+                <img src="Screenshot 2024-09-13 115012.png" alt="CatBoost">
+            </a>
+            <div class="content">
+                <h1>CatBoost</h1>
+                <p>CatBoost is a gradient boosting library that handles categorical features directly, aiming to reduce the need for extensive data preprocessing.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://www.knime.com/open-source" target="_blank">
+                <img src="knime-new-23.jpg" alt="KNIME (Open-source version)">
+            </a>
+            <div class="content">
+                <h1>KNIME</h1>
+                <p>KNIME is an open-source data analytics, reporting, and integration platform that supports various machine learning and data mining tasks.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://www.weka.io/" target="_blank">
+                <img src="0f8cff2758ba76d3cd8097981f753b98.jpg" alt="Weka">
+            </a>
+            <div class="content">
+                <h1>Weka</h1>
+                <p>Weka is a collection of machine learning algorithms for data mining tasks, with tools for data preprocessing, classification, regression, clustering, and visualization.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://matplotlib.org/" target="_blank">
+                <img src="Created_with_Matplotlib-logo.svg-removebg-preview.jpg" alt="Matplotlib">
+            </a>
+            <div class="content">
+                <h1>Matplotlib</h1>
+                <p>Matplotlib is a Python plotting library that provides an object-oriented API for embedding plots into applications and interactive data visualization.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://seaborn.pydata.org/" target="_blank">
+                <img src="illu_seaborn_blog-120.png" alt="Seaborn">
+            </a>
+            <div class="content">
+                <h1>Seaborn</h1>
+                <p>Seaborn is a Python visualization library based on Matplotlib that provides a high-level interface for drawing attractive and informative statistical graphics.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://public.tableau.com/" target="_blank">
+                <img src="TB-removebg-preview.jpg" alt="Tableau Public">
+            </a>
+            <div class="content">
+                <h1>Tableau Public</h1>
+                <p>Tableau Public is a free version of Tableau that allows users to create and share interactive and visually appealing data visualizations online.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://www.bigml.com/" target="_blank">
+                <img src="bigml_logo_clear@2x-removebg-preview.jpg" alt="BigML (Free tier)">
+            </a>
+            <div class="content">
+                <h1>BigML</h1>
+                <p>BigML offers a free tier for its machine learning platform, providing tools for creating, evaluating, and deploying machine learning models easily.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
